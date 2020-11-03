@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = +prompt('Enter the number to look for');
+    let array = [2,3,4,6,8,9];
+    function searchNumber (num, array){
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === num){
+                return i;
+            }
+        }
+    }
+    document.write('Vị trí của số trong mảng là :' + searchNumber(num, array));
+
+
+</script>
+</body>
+</html>
